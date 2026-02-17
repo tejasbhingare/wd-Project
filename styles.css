@@ -407,6 +407,7 @@ a:hover {
     border-radius: var(--radius-lg);
     padding: 30px;
     max-width: 600px;
+    margin: 0 auto; /* center the form horizontally */
 }
 
 .form-group {
