@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Due Date - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Tasks by Due Date</h1>
+            <a href="all-tasks.html" class="btn btn-secondary">← Back</a>
+        </div>
+
+        <div class="filter-section">
+            <div class="date-filter-buttons">
+                <button class="date-btn active" data-filter="today">📅 Today</button>
+                <button class="date-btn" data-filter="tomorrow">📅 Tomorrow</button>
+                <button class="date-btn" data-filter="week">📅 This Week</button>
+                <button class="date-btn" data-filter="month">📅 This Month</button>
+                <button class="date-btn" data-filter="overdue">⚠️ Overdue</button>
+            </div>
+        </div>
+
+        <div id="dateTasksList" class="tasks-list">
+            <p class="empty-state">No tasks for this date range</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/due-date-filter.js"></script>
+</body>
+</html>

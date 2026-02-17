@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Help & FAQ</h1>
+            <p>Find answers to common questions</p>
+        </div>
+
+        <div class="search-faq">
+            <input type="text" id="faqSearch" class="search-box" placeholder="Search FAQs...">
+        </div>
+
+        <section class="faq-section">
+            <h2>Getting Started</h2>
+            <div class="faq-items">
+                <details class="faq-item">
+                    <summary>How do I create a new task?</summary>
+                    <p>Click on "Add Task" in the navigation menu. Fill in the task title, description, category, priority, and due date. Then click "Create Task" to save it.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I edit an existing task?</summary>
+                    <p>Go to "All Tasks" and click on the task you want to edit. You can modify any field and click "Save Changes" to update it.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I delete a task?</summary>
+                    <p>Yes, you can delete tasks from the task details page or all tasks page. Deleted tasks go to the trash and can be recovered within 30 days.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I mark a task as complete?</summary>
+                    <p>Click on a task and select "Mark as Complete" or check the checkbox on the task card in the all tasks view.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Organization & Filtering</h2>
+            <div class="faq-items">
+                <details class="faq-item">
+                    <summary>What are task categories?</summary>
+                    <p>Categories help organize your tasks by type (Work, Personal, Shopping, Health, Education, Other). You can filter tasks by category to focus on what matters.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What do the priority levels mean?</summary>
+                    <p><strong>High:</strong> Urgent tasks that need immediate attention. <strong>Medium:</strong> Important but not urgent. <strong>Low:</strong> Tasks that can be done anytime.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I search for tasks?</summary>
+                    <p>Use the search box on the "All Tasks" page to find tasks by title or description. Search works across all your tasks.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I filter tasks by due date?</summary>
+                    <p>Yes, visit the "Due Date" page to filter tasks by today, tomorrow, this week, this month, or overdue tasks.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Data & Settings</h2>
+            <div class="faq-items">
+                <details class="faq-item">
+                    <summary>Where is my data stored?</summary>
+                    <p>All your tasks are stored locally in your browser using LocalStorage. This means your data stays on your device and is never sent to any server.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Will I lose my tasks if I clear browser data?</summary>
+                    <p>Yes, clearing your browser cache or LocalStorage will delete all tasks. Be careful when clearing browser data.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I export my tasks?</summary>
+                    <p>Yes, go to your Profile page and click "Export All Tasks" to download your tasks as a JSON file for backup.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I import previously exported tasks?</summary>
+                    <p>On the Profile page, click "Import Tasks" and select a previously exported JSON file to restore your tasks.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I change the theme?</summary>
+                    <p>Yes, go to your Profile settings and select Light, Dark, or Auto theme based on your preference.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Troubleshooting</h2>
+            <div class="faq-items">
+                <details class="faq-item">
+                    <summary>My tasks disappeared. What happened?</summary>
+                    <p>This usually happens when browser data is cleared. Check your trash folder first. If not there, the data may have been cleared from LocalStorage.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Why aren't my changes saving?</summary>
+                    <p>Make sure your browser has LocalStorage enabled. Some browsers disable it in private/incognito mode.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>The app isn't working properly. What should I do?</summary>
+                    <p>Try refreshing the page. If the problem persists, clear your browser cache and reload the application.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I use Task Manager on mobile?</summary>
+                    <p>Yes, Task Manager is fully responsive and works on smartphones, tablets, and desktop computers.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Tips & Tricks</h2>
+            <div class="faq-items">
+                <details class="faq-item">
+                    <summary>How can I stay productive?</summary>
+                    <p>Start each day by reviewing your dashboard. Set realistic goals, prioritize important tasks, and celebrate completing them by marking them complete.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What's the best way to use categories?</summary>
+                    <p>Organize tasks by major life areas (Work, Personal, Health, etc). This makes it easier to focus on one area at a time.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Should I use tags?</summary>
+                    <p>Tags are optional but helpful for grouping related tasks. Use tags like "urgent," "bug," "feature" to make searching easier.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="faq-section contact-section">
+            <h2>Still Need Help?</h2>
+            <p>If you can't find the answer you're looking for, feel free to <a href="contact.html">contact us</a>.</p>
+        </section>
+
+        <a href="../index.html" class="btn btn-primary">← Back to Dashboard</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/help.js"></script>
+</body>
+</html>

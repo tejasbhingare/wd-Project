@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="pages/all-tasks.html">All Tasks</a></li>
+                <li><a href="pages/add-task.html">Add Task</a></li>
+                <li><a href="pages/categories.html">Categories</a></li>
+                <li><a href="pages/profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="dashboard-header">
+            <h1>Welcome Back!</h1>
+            <p>Here's your task overview for today</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p class="stat-number" id="totalTasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p class="stat-number" id="completedTasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p class="stat-number" id="pendingTasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Overdue</h3>
+                <p class="stat-number warning" id="overdueTasks">0</p>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <section class="todays-tasks">
+                <h2>Today's Tasks</h2>
+                <div id="todayTasksList" class="tasks-list">
+                    <p class="empty-state">No tasks for today</p>
+                </div>
+            </section>
+
+            <section class="upcoming-tasks">
+                <h2>Upcoming This Week</h2>
+                <div id="upcomingTasksList" class="tasks-list">
+                    <p class="empty-state">No upcoming tasks</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="dashboard-actions">
+            <a href="pages/add-task.html" class="btn btn-primary">+ Add New Task</a>
+            <a href="pages/completed-tasks.html" class="btn btn-secondary">View Completed</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

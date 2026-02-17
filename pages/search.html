@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Search Results</h1>
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchQuery" class="search-box" placeholder="Search your tasks..." value="">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <div class="search-info">
+            <p>Showing results for: <strong id="searchTermDisplay"></strong></p>
+            <p id="resultCount">Found 0 results</p>
+        </div>
+
+        <div id="searchResultsList" class="tasks-list">
+            <p class="empty-state">No tasks match your search. Try different keywords.</p>
+        </div>
+
+        <a href="all-tasks.html" class="btn btn-secondary">← Back to All Tasks</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

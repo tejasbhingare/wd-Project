@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Task Categories</h1>
+            <p>Organize your tasks by category</p>
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid">
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>💼 Work</h3>
+                    <span class="category-count" data-category="Work">0</span>
+                </div>
+                <p>Work-related tasks and projects</p>
+                <a href="priority-filter.html?category=Work" class="btn btn-secondary">View Tasks</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>👤 Personal</h3>
+                    <span class="category-count" data-category="Personal">0</span>
+                </div>
+                <p>Personal goals and daily tasks</p>
+                <a href="priority-filter.html?category=Personal" class="btn btn-secondary">View Tasks</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>🛒 Shopping</h3>
+                    <span class="category-count" data-category="Shopping">0</span>
+                </div>
+                <p>Shopping lists and items to buy</p>
+                <a href="priority-filter.html?category=Shopping" class="btn btn-secondary">View Tasks</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>❤️ Health</h3>
+                    <span class="category-count" data-category="Health">0</span>
+                </div>
+                <p>Health and fitness goals</p>
+                <a href="priority-filter.html?category=Health" class="btn btn-secondary">View Tasks</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>📚 Education</h3>
+                    <span class="category-count" data-category="Education">0</span>
+                </div>
+                <p>Learning and educational tasks</p>
+                <a href="priority-filter.html?category=Education" class="btn btn-secondary">View Tasks</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3>📌 Other</h3>
+                    <span class="category-count" data-category="Other">0</span>
+                </div>
+                <p>Miscellaneous tasks</p>
+                <a href="priority-filter.html?category=Other" class="btn btn-secondary">View Tasks</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/categories.js"></script>
+</body>
+</html>

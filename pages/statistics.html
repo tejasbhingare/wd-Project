@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Productivity Statistics</h1>
+            <p>Track your task completion and productivity</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card large">
+                <h3>Completion Rate</h3>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                        <circle cx="50" cy="50" r="45" class="progress-fill" id="completionProgressCircle"></circle>
+                    </svg>
+                    <p class="stat-percentage" id="completionPercentage">0%</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Tasks Created</h3>
+                <p class="stat-number" id="totalCreated">0</p>
+                <p class="stat-label">All time</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Tasks Completed</h3>
+                <p class="stat-number" id="totalCompleted">0</p>
+                <p class="stat-label">This month</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Completion Time</h3>
+                <p class="stat-number" id="avgCompletionTime">-</p>
+                <p class="stat-label">Days per task</p>
+            </div>
+        </div>
+
+        <section class="stats-section">
+            <h2>Tasks by Category</h2>
+            <div id="categoryStats" class="category-stats-list">
+                <!-- Generated dynamically -->
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Tasks by Priority</h2>
+            <div id="priorityStats" class="priority-stats-list">
+                <div class="stat-item">
+                    <span class="priority-label">🔴 High Priority</span>
+                    <span class="stat-value" id="highPriorityStat">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="priority-label">🟡 Medium Priority</span>
+                    <span class="stat-value" id="mediumPriorityStat">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="priority-label">🟢 Low Priority</span>
+                    <span class="stat-value" id="lowPriorityStat">0</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>Weekly Activity</h2>
+            <div id="weeklyActivityChart" class="chart-container">
+                <!-- Generated dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/statistics.js"></script>
+</body>
+</html>

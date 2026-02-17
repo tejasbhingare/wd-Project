@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Task Manager</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <div class="logo-rocket">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13"></path>
+                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    TaskManager
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="all-tasks.html">All Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Settings</h1>
+            <p>Customize your Task Manager experience</p>
+        </div>
+
+        <div class="settings-container">
+            <section class="settings-section">
+                <h2>Appearance</h2>
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Theme</h3>
+                            <p>Choose your preferred color scheme</p>
+                        </div>
+                        <select id="themeSelect" class="setting-input">
+                            <option value="light">Light Mode</option>
+                            <option value="dark">Dark Mode</option>
+                            <option value="auto">Auto (System)</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Font Size</h3>
+                            <p>Adjust text size for better readability</p>
+                        </div>
+                        <select id="fontSizeSelect" class="setting-input">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Notifications</h2>
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Push Notifications</h3>
+                            <p>Get notified about upcoming tasks</p>
+                        </div>
+                        <input type="checkbox" id="pushNotifications" class="toggle-switch" checked>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Sound Alerts</h3>
+                            <p>Play sound when notifications arrive</p>
+                        </div>
+                        <input type="checkbox" id="soundAlerts" class="toggle-switch">
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Email Reminders</h3>
+                            <p>Send email reminders for overdue tasks</p>
+                        </div>
+                        <input type="checkbox" id="emailReminders" class="toggle-switch">
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Notification Timing</h3>
+                            <p>When to notify about due tasks</p>
+                        </div>
+                        <select id="notificationTiming" class="setting-input">
+                            <option value="15">15 minutes before</option>
+                            <option value="30">30 minutes before</option>
+                            <option value="60">1 hour before</option>
+                            <option value="1440">1 day before</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Task Display</h2>
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Tasks Per Page</h3>
+                            <p>Number of tasks to show per page</p>
+                        </div>
+                        <select id="tasksPerPage" class="setting-input">
+                            <option value="5">5 tasks</option>
+                            <option value="10" selected>10 tasks</option>
+                            <option value="20">20 tasks</option>
+                            <option value="50">50 tasks</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Sort By</h3>
+                            <p>Default sorting for task lists</p>
+                        </div>
+                        <select id="sortBy" class="setting-input">
+                            <option value="dueDate">Due Date</option>
+                            <option value="priority">Priority</option>
+                            <option value="created">Created Date</option>
+                            <option value="title">Title (A-Z)</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Show Completed Tasks</h3>
+                            <p>Display completed tasks in task list</p>
+                        </div>
+                        <input type="checkbox" id="showCompleted" class="toggle-switch" checked>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Privacy & Security</h2>
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Data Storage</h3>
+                            <p>All data is stored locally on your device. No cloud sync.</p>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <h3>Auto-Lock Timeout</h3>
+                            <p>Automatically lock after idle time</p>
+                        </div>
+                        <select id="autoLockTimeout" class="setting-input">
+                            <option value="0">Never</option>
+                            <option value="5">5 minutes</option>
+                            <option value="15">15 minutes</option>
+                            <option value="30">30 minutes</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Keyboard Shortcuts</h2>
+                <div class="shortcuts-list">
+                    <div class="shortcut-item">
+                        <span class="shortcut-key">Ctrl + N</span>
+                        <span class="shortcut-desc">New Task</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="shortcut-key">Ctrl + F</span>
+                        <span class="shortcut-desc">Search Tasks</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="shortcut-key">Ctrl + S</span>
+                        <span class="shortcut-desc">Save</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="settings-actions">
+                <button id="saveSettingsBtn" class="btn btn-primary">Save Settings</button>
+                <button id="resetSettingsBtn" class="btn btn-secondary">Reset to Defaults</button>
+            </div>
+
+            <div id="settingsSavedMessage" class="success-message" style="display: none;">
+                ✅ Settings saved successfully!
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Task Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/settings.js"></script>
+</body>
+</html>
